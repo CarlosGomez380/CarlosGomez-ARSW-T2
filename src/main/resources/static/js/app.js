@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         markers = [];
         bounds = new google.maps.LatLngBounds();
         m.forEach(function (marker) {
-            var position = new google.maps.LatLng(marker.location.latitude, marker.location.longitude);
+            var position = new google.maps.LatLng(marker.latlng[0], marker.latlng[1]);
             markers.push(
             new google.maps.Marker({
                 position: position,
@@ -57,6 +57,7 @@ var app=(function(){
 
     function createTableInfo(info){
         $('#TableInfo tbody').empty();
+        appiclient.getPos(info.name);
         var markup= "<tr> <td> Num Deaths </td> <td>" + info.muertos + "</td> </tr>"
         $("#filasInfo").append(markup)
         var markup= "<tr> <td> Num Infected </td> <td>" + info.infectados + "</td> </tr>"
@@ -75,6 +76,10 @@ var app=(function(){
         })
     }
 
+    function imprimir(nombre){
+        plotMarkers(nombre);
+    }
+
 
 
 
@@ -82,5 +87,6 @@ var app=(function(){
             createTable:createTable,
             createTableInfo:createTableInfo,
             createTableByName:createTableByName,
+            imprimir:imprimir
         }
 })();

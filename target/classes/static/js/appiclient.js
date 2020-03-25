@@ -36,9 +36,23 @@ var appiclient=(function(){
         .catch(error => console.log(error));
     }
 
+    function getPos(name){
+        axios({
+            method:'get',
+            url: " https://restcountries-v1.p.rapidapi.com/name/"+ name,
+            headers:{
+                "x-rapidapi-host": "restcountries-v1.p.rapidapi.com",
+                "x-rapidapi-key": "562ad42b0cmsh5d796280e44b680p1df165jsn6d71ed954e15"
+            }
+        })
+        .then(response => app.imprimir(response.data))
+        .catch(error => console.log(error));
+    }
+
     return{
         getCountries:getCountries,
         getCountryByName:getCountryByName,
+        getPos:getPos
 
 
     }

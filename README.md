@@ -2,7 +2,7 @@
 
  ## Despliegue en Heroku
  
- [![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://https://carlosgomez-arsw-t2.herokuapp.com)
+ [![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://carlosgomez-arsw-t2.herokuapp.com/)
 
 ## Preparación para el Parcial
 

@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 var app=(function(){
 
+
+
     function createTable(countries){
         $('#MyTable tbody').empty();
         console.log(countries);
@@ -72,6 +74,8 @@ var app=(function(){
             $("#filasPaisess").append(markup)
         })
     }
+
+
 
 
     return{

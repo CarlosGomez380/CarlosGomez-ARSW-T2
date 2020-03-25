@@ -12,6 +12,7 @@ var appiclient=(function(){
 
     function getCountryByName(name){
         document.getElementById("pais").style.display="block";
+        document.getElementById("row").style.display="block";
         document.getElementById("Table").style.display="table";
         document.getElementById("TableInfo").style.display="table";
         document.getElementById('pais').innerHTML = name;
@@ -37,7 +38,8 @@ var appiclient=(function(){
 
     return{
         getCountries:getCountries,
-        getCountryByName:getCountryByName
+        getCountryByName:getCountryByName,
+
 
     }
 })();

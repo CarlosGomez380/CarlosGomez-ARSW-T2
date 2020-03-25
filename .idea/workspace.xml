@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d6893741-be49-4e76-9edd-95dad3c00c29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/appiclient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/appiclient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/appiclient.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/appiclient.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +33,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -68,28 +73,29 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="WindowStateProjectService">
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1585137376269">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585137376269" />
-    <state width="1286" height="135" key="GridCell.Tab.0.bottom" timestamp="1585158764808">
+    <state width="1286" height="135" key="GridCell.Tab.0.bottom" timestamp="1585160789599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="135" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585158764808" />
-    <state width="1286" height="135" key="GridCell.Tab.0.center" timestamp="1585158764807">
+    <state width="1286" height="135" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585160789599" />
+    <state width="1286" height="135" key="GridCell.Tab.0.center" timestamp="1585160789599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="135" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585158764807" />
-    <state width="1286" height="135" key="GridCell.Tab.0.left" timestamp="1585158764807">
+    <state width="1286" height="135" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585160789599" />
+    <state width="1286" height="135" key="GridCell.Tab.0.left" timestamp="1585160789599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="135" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585158764807" />
-    <state width="1286" height="135" key="GridCell.Tab.0.right" timestamp="1585158764807">
+    <state width="1286" height="135" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585160789599" />
+    <state width="1286" height="135" key="GridCell.Tab.0.right" timestamp="1585160789599">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="135" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585158764807" />
+    <state width="1286" height="135" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585160789599" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585107378142">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

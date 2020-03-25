@@ -53,8 +53,19 @@ var app=(function(){
         })
     }
 
+    function createTableInfo(info){
+        $('#TableInfo tbody').empty();
+        var markup= "<tr> <td> Num Deaths </td> <td>" + info.muertos + "</td> </tr>"
+        $("#filasInfo").append(markup)
+        var markup= "<tr> <td> Num Infected </td> <td>" + info.infectados + "</td> </tr>"
+        $("#filasInfo").append(markup)
+        var markup= "<tr> <td> Num Recovered </td> <td>" + info.curados + "</td> </tr>"
+        $("#filasInfo").append(markup)
+    }
+
     function createTableByName(countries){
         $('#Table tbody').empty();
+
         console.log(countries);
         countries.map(function(element){
             var markup = "<tr> <td>"+ element.province+"</td> <td>"+element.deaths+"</td> <td>"+element.confirmed+"</td> <td>"+element.recovered+"</td></tr>";
@@ -62,8 +73,10 @@ var app=(function(){
         })
     }
 
+
     return{
             createTable:createTable,
+            createTableInfo:createTableInfo,
             createTableByName:createTableByName,
         }
 })();

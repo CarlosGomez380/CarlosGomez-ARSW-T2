@@ -45,4 +45,14 @@ public class CoronavirusStatsController {
         }
     }
 
+    @RequestMapping( path ="/1/{name}",method = RequestMethod.GET)
+    public ResponseEntity<?> GetCountryInfo(@PathVariable  String name) throws CoronavirusStatsException{
+        try {
+            return new ResponseEntity<>(coronavirus.getCountryInfo(name), HttpStatus.ACCEPTED);
+        } catch (CoronavirusStatsException e) {
+            Logger.getLogger(CoronavirusStatsController.class.getName()).log(Level.SEVERE, null, e);
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+        }
+    }
+
 }

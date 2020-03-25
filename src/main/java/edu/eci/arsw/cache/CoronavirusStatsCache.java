@@ -49,10 +49,6 @@ public class CoronavirusStatsCache {
             }
 
         }
-        System.out.println(paises.get(0).getName());
-        System.out.println(paises.get(0).getCurados());
-        System.out.println(paises.get(1).getName());
-        System.out.println(paises.get(1).getCurados());
     }
 
     public ArrayList<Pais> getCountries(){
@@ -107,5 +103,14 @@ public class CoronavirusStatsCache {
             }
         };
         timer.scheduleAtFixedRate(timerTask, 300000, 300000);
+    }
+
+    public Pais getCountryInfo(String name) throws CoronavirusStatsException{
+        for (int i=0; i<paises.size(); i++){
+            if(paises.get(i).getName().equals(name)){
+                return paises.get(i);
+            }
+        }
+        throw new CoronavirusStatsException( "No se encontró el país" );
     }
 }

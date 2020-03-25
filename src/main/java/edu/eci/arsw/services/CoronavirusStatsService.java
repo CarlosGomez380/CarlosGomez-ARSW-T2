@@ -49,4 +49,9 @@ public class CoronavirusStatsService {
             return coronavirus.getCountryByName(name);
         }
     }
+
+    public Pais getCountryInfo(String name)  throws CoronavirusStatsException {
+        return coronavirus.getCountryInfo(name);
+
+    }
 }

@@ -1,7 +1,7 @@
 package edu.eci.arsw.services;
 
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
+
 import edu.eci.arsw.cache.CoronavirusStatsCache;
 import edu.eci.arsw.cache.CoronavirusStatsException;
 import edu.eci.arsw.model.Pais;
@@ -21,7 +21,10 @@ public class CoronavirusStatsService {
     @Autowired
     HttpConnectionService connection=null;
 
-
+    /**
+     * check whether countries' information is on cache or it's necessary to get them from HttpConnectionService.
+     * @return all the countries' information related with covid-19 as a ArrayList of Countries.
+     */
     public ArrayList<Pais> getCountries() throws CoronavirusStatsException {
 
         if(coronavirus.getCountriesFirstTime()){
@@ -31,25 +34,31 @@ public class CoronavirusStatsService {
             JSONArray countries= new JSONArray((covid).get("covid19Stats").toString());
             JSONObject pais= new JSONObject(countries.get(0).toString());
             coronavirus.getCountriesFromConnection(countries);
-
         }
 
         return coronavirus.getCountries();
 
     }
 
-
+    /**
+     * check whether countries' information related with their regions is on cache or it's necessary to get them from HttpConnectionService
+     * @param name of the coutry.
+     * @return all the regions of the country related with covid-19 as a String.
+     */
     public String getCountryByName(String name)  throws CoronavirusStatsException {
         if(coronavirus.getCountryByName(name)!= null){
-            System.out.println("chao");
             return coronavirus.getCountryByName(name);
         }else{
-            System.out.println("Hola");
             coronavirus.getCountryByName(name,connection.getConnectionByCountry(name));
             return coronavirus.getCountryByName(name);
         }
     }
 
+    /**
+     * Get the information of the country on cache.
+     * @param name of the coutry.
+     * @return the information of the country related with covid-19 as a String.
+     */
     public Pais getCountryInfo(String name)  throws CoronavirusStatsException {
         return coronavirus.getCountryInfo(name);
 

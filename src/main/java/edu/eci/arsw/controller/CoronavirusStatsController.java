@@ -23,7 +23,7 @@ public class CoronavirusStatsController {
 
     /**
      *
-     * @return all the cases of the given country as a HTTP response.
+     * @return all the countries that have infected people with covid-19 as a HTTP response.
      */
     @RequestMapping( method = RequestMethod.GET)
     public ResponseEntity<?> GetCountrys() throws CoronavirusStatsException{
@@ -35,6 +35,10 @@ public class CoronavirusStatsController {
         }
     }
 
+    /**
+     *
+     * @return all the regions of the country related with covid-19 as a HTTP response.
+     */
     @RequestMapping( path ="/{name}",method = RequestMethod.GET)
     public ResponseEntity<?> GetCountryByName(@PathVariable  String name) throws CoronavirusStatsException{
         try {
@@ -45,6 +49,10 @@ public class CoronavirusStatsController {
         }
     }
 
+    /**
+     *
+     * @return the total cases of the country related with covid-19 as a HTTP response.
+     */
     @RequestMapping( path ="/1/{name}",method = RequestMethod.GET)
     public ResponseEntity<?> GetCountryInfo(@PathVariable  String name) throws CoronavirusStatsException{
         try {

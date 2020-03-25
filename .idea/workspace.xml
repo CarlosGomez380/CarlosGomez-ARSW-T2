@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d6893741-be49-4e76-9edd-95dad3c00c29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/appiclient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/appiclient.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/appiclient.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/appiclient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cache/CoronavirusStatsCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cache/CoronavirusStatsCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/controller/CoronavirusStatsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/controller/CoronavirusStatsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/services/CoronavirusStatsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/services/CoronavirusStatsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/services/HttpConnectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/services/HttpConnectionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

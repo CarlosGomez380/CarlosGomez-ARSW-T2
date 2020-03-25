@@ -21,6 +21,10 @@ public class CoronavirusStatsCache {
 
     ArrayList<Pais> paises= new ArrayList<>();
 
+    /**
+     *
+     * Verify if all countries are in cache
+     */
     public boolean getCountriesFirstTime(){
         if (paises.isEmpty()){
             return true;
@@ -29,6 +33,11 @@ public class CoronavirusStatsCache {
         }
     }
 
+    /**
+     *
+     * Add countries' information to cache
+     * @param countries Array of countries
+     */
     public void getCountriesFromConnection(JSONArray countries){
         JSONObject pais;
         for (int i=0; i<countries.length();i++){
@@ -51,6 +60,11 @@ public class CoronavirusStatsCache {
         }
     }
 
+    /**
+     *
+     * Get the information of all the countries from cache
+     * @return data of all the countries
+     */
     public ArrayList<Pais> getCountries(){
         return paises;
     }
@@ -73,7 +87,7 @@ public class CoronavirusStatsCache {
     /**
      *
      * @param name country's name
-     * @return all the informatio of the given country if the country is not on cache
+     * @return all the information of the given country if the country is not on cache
      * @throws CoronavirusStatsException if the given country doesn't exist
      */
     public String getCountryByName(String name) throws CoronavirusStatsException{
@@ -105,6 +119,12 @@ public class CoronavirusStatsCache {
         timer.scheduleAtFixedRate(timerTask, 300000, 300000);
     }
 
+    /**
+     * Get the whole data of the country that is on cache
+     * Remove the country from cache when the time has passed 5 minutes
+     * @param name country's name
+     * @return data of the whole country
+     */
     public Pais getCountryInfo(String name) throws CoronavirusStatsException{
         for (int i=0; i<paises.size(); i++){
             if(paises.get(i).getName().equals(name)){
